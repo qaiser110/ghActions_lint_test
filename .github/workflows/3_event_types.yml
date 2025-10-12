@@ -1,20 +1,20 @@
 name: Event Types
 on:
   pull_request:
-    types: 
+    types:
       - opened
     branches:
       - main
-      - 'dev-*' # branch starts with 'dev-' eg: dev-new  dev-modal
-      - 'feat/**' # feat/modal feat/ui/button
-  workflow_dispatch: 
+      - "dev-*" # branch starts with 'dev-' eg: dev-new  dev-modal
+      - "feat/**" # feat/modal feat/ui/button
+  workflow_dispatch:
   push:
     branches:
-      - main
-      - 'dev-*' # branch starts with 'dev-' eg: dev-new  dev-modal
-      - 'feat/**' # feat/modal feat/ui/button
-    paths-ignore: 
-      - '.github/workflows/*'
+      - "master"
+      - "dev-*" # branch starts with 'dev-' eg: dev-new  dev-modal
+      - "feat/**" # feat/modal feat/ui/button
+    paths-ignore:
+      - ".github/workflows/*"
 jobs:
   lint:
     runs-on: ubuntu-latest

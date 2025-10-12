@@ -1,4 +1,4 @@
-name: Lint + Test + Deploy
+name: 2 Lint/Test/Deploy - Multiple Jobs
 on: workflow_dispatch
 jobs:
   lint:
