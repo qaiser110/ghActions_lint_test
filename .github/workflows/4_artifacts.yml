@@ -43,7 +43,7 @@ jobs:
           name: dist-files
       - name: Output contents
         run: ls
-      - name: Output dist contents
-        run: ls -la dist
+      # - name: Output dist contents
+      #   run: ls -la dist
       - name: Deploy
         run: echo "Deploying..."
